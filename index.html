@@ -1,14 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="eo0RwSnNgsBGFG3GxCoSnFOIXQ2pzu7bB7XrLTkhn_g" />
-<title>TLIDI ELECTRO</title>
-
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday & Event Reminder App - Capture Your Celebrations</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using Google Fonts for Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 <body>
 
-<h1>TLIDI ELECTRO</h1>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/icon.png" alt="App Logo" class="logo" style="margin-right: 10px;" >
+                Birthday & Event Reminder App
+            </div>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="document.querySelector('.nav-links').classList.remove('active')">About</a></li>
+                <li><a href="#screenshots" onclick="document.querySelector('.nav-links').classList.remove('active')">Screenshots</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="#contact" onclick="document.querySelector('.nav-links').classList.remove('active')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Capture every moment,<br>never miss a celebration.</h1>
+            <p>The smartest way to track birthdays, anniversaries, and special events. Beautifully designed for your peace of mind.</p>
+            <div class="hero-buttons">
+                <a href="#screenshots" class="hero-btn">Explore the App</a>
+                <a href="https://play.google.com/store/apps/details?id=shop.tlidielectro.birthdayandevent_reminderapp" class="google-play-link" target="_blank">Get it on Google Play</a>
+            </div>
+        </section>
+
+        <!-- Features / About Section (Replaces old About) -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Smart Reminders</h3>
+                        <p>Never forget a birthday or anniversary again. Set custom reminders for the same day, a day before, or a week in advance to ensure you're always prepared.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Beautiful Design</h3>
+                        <p>Experience a clean, material-inspired interface that makes tracking events a joy. Customize events with unique icons and colors to match the occasion.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <h3>Event Tracking</h3>
+                        <p>Keep all your important dates in one place. From birthdays to Valentine's Day, organize your life with our intuitive calendar and list views.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section id="screenshots" class="section">
+            <div class="container">
+                <h2 class="section-title">App Screenshots</h2>
+                <div class="screenshots-grid">
+                    <img src="images/screenshot1.png" alt="App Home Screen" class="screenshot-img" >
+                    <img src="images/screenshot2.png" alt="Add Event Screen" class="screenshot-img" >
+                    <img src="images/screenshot3.png" alt="Event Details Screen" class="screenshot-img" >
+                    <img src="images/screenshot4.png" alt="Celebration Screen" class="screenshot-img" >
+                    <img src="images/screenshot5.png" alt="Calendar Screen" class="screenshot-img" >
+                    <img src="images/screenshot6.png" alt="Event Details Screen" class="screenshot-img" >
+                    <img src="images/screenshot7.png" alt="Celebration Screen" class="screenshot-img" >
+                    <img src="images/screenshot8.png" alt="Calendar Screen" class="screenshot-img" >
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-container">
+                    <p class="contact-text">
+                        We are here to help! If you encounter any problems with the application or have any questions, 
+                        please do not hesitate to contact us.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <span class="label">Phone / SMS:</span>
+                            <a href="tel:+212784842555" class="value">+212 7 84 84 25 55</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">✉️</span>
+                            <span class="label">Email:</span>
+                            <a href="mailto:support@tlidielectro.shop" class="value">support@tlidielectro.shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TlidiElectroStudio. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
